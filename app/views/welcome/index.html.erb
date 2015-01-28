@@ -1,9 +1,49 @@
 <h1>Kyle Ratliff's Role Playing Character Sheet</h1>
 <h2>Testing</h2>
 
-<input type="text" class="large" id="firstName" name="firstName">
-<input type="text" class="large" id="middleName" name="middleName">
-<input type="text" class="large" id="lastName" name="lastName">
+<table id="characterInfoTable" cellspacing="0">
+  <thead>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </thead>
+  <tbody>
+    <tr>
+      <td><h3>First Name:</h3></td>
+      <td colspan="3"><input type="text" class="large" id="firstName" name="firstName"></td>
+      <td><h3>Middle Name:</h3></td>
+      <td colspan="3"><input type="text" class="large" id="middleName" name="middleName"></td>
+      <td><h3>Last Name:</h3></td>
+      <td colspan="3"><input type="text" class="large" id="lastName" name="lastName"></td>
+    </tr>
+    <tr>
+      <td><h3>Class:</h3></td>
+      <td colspan="2"><input type="text" class="large" id="class" name="class"></td>
+      <td><h3>Middle Name:</h3></td>
+      <td colspan="2">asdf</td>
+      <td><h3>Last Name:</h3></td>
+      <td colspan="2">asdf</td>
+      <td><h3>Last Name:</h3></td>
+      <td colspan="2">asdf</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="characterInfoContainer">
+  <div class="span-4"><div class="span-4 identifier">asdf</div><div class="span-8 input"><input type="text" class="large" id="firstName" name="firstName"></div></div>
+  <div class="span-4">asdf</div>
+  <div class="span-4">asdf</div>
+
+</div>
 
 <br>
 
@@ -15,7 +55,7 @@
       <td><h3>Mod</h3></td>
       <td><h3>Base</h3></td>
       <td><h3>Class</h3></td>
-      <td><h3>Misc.</h3></td>
+      <td><h3>Other</h3></td>
     </tr>
   </thead>
 
@@ -69,4 +109,9 @@
       <td><input type="tel" class="small" id="miscCha" name="miscCha" value="0"></td>
     </tr>
   </tbody>
+
+  <tfoot>
+    <td colspan="3"><h3>Attribute Points Spent:</h3></td>
+    <td colspan="3"><p id="attributeTotal"></p></td>
+  </tfoot>
 </table>
